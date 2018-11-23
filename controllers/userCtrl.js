@@ -48,5 +48,6 @@ exports.login = async (req, res, next) => {
   console.log(token)
 
   res.set("recordToken", `Bearer ${token}`);
+  // res.set("oroauth", `Bearer ${token}`);
   return res.status(200).json(user);
 }
